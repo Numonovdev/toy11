@@ -1,0 +1,56 @@
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Ramka (kontent) */
+.ramka {
+  width: 90%;
+  max-width: 800px;
+  min-height: 90vh;
+  margin: 100px auto;
+  background-image: url('/rasmlar/ram2.png'); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(6px); /* fonni xira qiladi */
+  border-radius: 16px;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  z-index: 1;
+  position: relative;
+}
+
+/* Tana (body) uslubi */
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sarlavha{
+    margin: 5px;
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 8px;
+}
+.nm{
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+.nm img{
+    border-radius: 20px;
+    width: 90%;
+}

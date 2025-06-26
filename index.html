@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niyozjon & Marjona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <video autoplay muted loop class="bg-video">
+     <source src="/rasmlar/vdd.mp4" type="video/mp4">
+      Sizning brauzeringiz videoni qo‘llab-quvvatlamaydi.
+  </video>
+
+    <div class="ramka">
+        <!-- sarlavha -->
+         <div class="sarlavha">
+            <h1>Assalomu alaykum aziz do‘stlar va yaqinlar!
+                Sizni hayotimizdagi eng go‘zal kun — to‘y 
+                marosimimizda biz bilan birga bo‘lishga 
+                taklif qilamiz.
+            </h1> 
+         </div>
+          <!-- rasm N M  -->
+         <div class="nm">
+            <img src="./rasmlar/nnm.png" alt="">
+         </div>
+
+         <!-- sanasi -->
+        <div class="mt-10 b-black">
+            <p class="text-lg font-semibold">To‘y boshlanishiga qolgan vaqt:</p>
+            <div id="countdown" class="text-2xl mt-2"></div>
+        </div>
+
+
+         <!-- manzil -->
+          <div class="manzil">
+            <h1>Manzil:</h1>
+            <p>Farg`ona v, Quva t, Tojik qishloq MFY 82-uy</p>
+            <a href="https://maps.app.goo.gl/t4FzUDBQhX4dhdeU9">locatsiya</a>
+          </div>
+    </div>
+
+  <script>
+    const weddingDate = new Date("2025-07-15T09:00:00").getTime();
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = weddingDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("countdown").innerHTML = 
+        `${days} kun ${hours} soat ${minutes} daqiqa ${seconds} soniya`;
+    }, 1000);
+  </script>
+</body>
+</html>
