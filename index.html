@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niyozjon & Marjona</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=near_me" />
+    </head>
 <body>
      <video autoplay muted loop class="bg-video">
      <source src="/rasmlar/vdd.mp4" type="video/mp4">
@@ -22,13 +23,13 @@
             </h1> 
          </div>
           <!-- rasm N M  -->
-         <div class="nm">
-            <img src="./rasmlar/nnm.png" alt="">
+         <div class="nm" style="position: relative; width: 100%; height: 60vw; top: -90px;">
+            <img src="./rasmlar/загруженное.png" style="position: absolute; top: -50px; left: 0; z-index: -1;" alt="">
          </div>
 
          <!-- sanasi -->
         <div class="mt-10 b-black">
-            <p class="text-lg font-semibold">To‘y boshlanishiga qolgan vaqt:</p>
+            <p class="text-lg font-semibold"><span style="color: red; font-weight: 900;">15-iyul soat 09:00 da </span>yoziladigan "AMRU-MARIF" dasturxonimizga taklif etamiz. </p>
             <div id="countdown" class="text-2xl mt-2"></div>
         </div>
 
@@ -37,7 +38,9 @@
           <div class="manzil">
             <h1>Manzil:</h1>
             <p>Farg`ona v, Quva t, Tojik qishloq MFY 82-uy</p>
-            <a href="https://maps.app.goo.gl/t4FzUDBQhX4dhdeU9">locatsiya</a>
+            <a   href="https://maps.app.goo.gl/t4FzUDBQhX4dhdeU9">Location <span class="material-symbols-outlined">
+near_me
+</span></a>
           </div>
     </div>
 
@@ -51,7 +54,7 @@
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
       document.getElementById("countdown").innerHTML = 
-        `${days} kun ${hours} soat ${minutes} daqiqa ${seconds} soniya`;
+        `${days} kun ${hours} soat ${minutes} daqiqa ${seconds} soniya qoldi`;
     }, 1000);
   </script>
 </body>
